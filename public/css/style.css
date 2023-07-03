@@ -154,6 +154,11 @@ footer{
         grid-template-columns : auto auto auto;
         
     }
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
     
     .failure{
         margin: 40px auto;
@@ -167,6 +172,11 @@ footer{
         gap: 20px;
         grid-template-columns : auto auto auto auto auto auto;
         
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
     .failure{
         margin: 40px auto;
