@@ -1,0 +1,9 @@
+<%- include('partials/header') %>
+<section class="failure">
+    <p class="error-code"><%= error_code %></p>
+    <p class="error-msg"><%= error_msg %></p>
+    <form action="/" method="get">
+        <button type="submit"><%= btn_txt %></button>
+    </form>
+</section>
+<%- include('partials/footer') %>

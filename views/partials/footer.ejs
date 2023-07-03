@@ -1,0 +1,21 @@
+<footer>
+    <p class="copyright">&COPY; Copyrights 2023 Grasath</p>
+</footer>
+
+<script>
+    const time_zone = document.querySelector('.timezone').textContent;
+    setInterval(function(){
+        var clock ;
+        const currentTime = new Date();
+        const option = {hour : 'numeric', minute : 'numeric', hour12 : true, timeZone : time_zone}
+        const hours = currentTime.toLocaleString('en-us',option);
+        clock = hours;
+        var time = document.querySelector('.time');
+        time.innerHTML = clock;
+    },1000);
+    
+</script>
+
+
+</body>
+</html>

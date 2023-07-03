@@ -1,0 +1,180 @@
+body{
+    background-image: url('/images/bg.png');
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    padding: 5px 20px;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0,0.5);
+    color: white;
+    flex-shrink: 0;
+}
+.logo{
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header .time{
+    padding-top: 11px;
+    margin-left: auto;
+    font-size: large;
+}
+main{
+    flex-shrink: 1;
+}
+form{
+    margin: 20px ;
+    text-align: center;
+}
+input[type = "search"]{
+    width: 300px;
+    padding: 10px 15px;
+    font-size: large;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+input[type = "search"]:focus{
+    outline: none;
+}
+main button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: x-large;
+}
+.city-name{
+    margin-bottom: -15px;
+    color: black;
+}
+span{
+    font-size: 16px;
+}
+.main-info{
+    border-radius: 8px;
+    padding: 5px 20px;
+    margin: 10px 20px;
+    background-color: rgba(128, 128, 128,0.5);
+}
+.weather-icon{
+    width: 120px;
+}
+.weather-main{
+    display: flex;
+}
+.weather-info{
+    margin-left: -5px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.temp{
+    font-size: xx-large;
+    margin-bottom: -15px;
+    font-weight: bold;
+}
+
+.extra-info{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto;
+    margin: 25px 20px 15px;
+
+}
+.extra-info div{
+    background-color: rgba(128, 128, 128,0.5);
+    border-radius: 8px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+.text-bold{
+    font-weight: bold;
+    font-size: large;
+}
+
+.failure{
+    background-color: rgba(128, 128, 128,0.5);
+    margin: 40px 40px;
+    padding: 25px 20px;
+    text-align: center;
+}
+.error-code{
+    font-family: cursive;
+    font-size: 130px;
+    font-weight: bolder;
+    margin: auto auto 5px;
+}
+
+.error-msg{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    bottom: 50px;
+}
+
+.failure button{
+    background-color: #FFC95F;
+    border: 2px solid black;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: -2px 2px 5px 2px black;
+
+}
+.failure button:hover{
+    box-shadow: 2px 2px 2px 2px black;
+}
+.failure button:active{
+    padding: 5px 10px;
+}
+footer{
+    color: white;
+    text-align: center;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0,0.5);
+    font-size: small;
+    padding: 5px 0 2px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+@media (min-width : 768px) and (max-width: 1023px) {
+    .extra-info{
+        display: grid;
+        gap: 20px;
+        grid-template-columns : auto auto auto;
+        
+    }
+    
+    .failure{
+        margin: 40px auto;
+        width: 500px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .extra-info{
+        display: grid;
+        gap: 20px;
+        grid-template-columns : auto auto auto auto auto auto;
+        
+    }
+    .failure{
+        margin: 40px auto;
+        width: 500px;
+    }
+}
+

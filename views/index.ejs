@@ -1,0 +1,55 @@
+<%- include('partials/header') %>
+<main>
+    <form action="#" method="post">
+        <input type="search" name="cityName" value="" placeholder="city name" required>
+        <button type="submit"><i class="fa fa-light fa-shsrp fa-magnifying-glass"></i></button>
+    </form>
+
+    <section class="main-info">
+        <h1 class="city-name"><%= city_name %> ⁄ <span class="day"><%= day %></span><span> ∘ <%= tmp_min %>&deg;C | <%= tmp_max %>&deg;C</span></h1>
+        <div class="weather-main">
+            <img class="weather-icon" src=" <%= weather_icon %>" alt="">
+            <div class="weather-info">
+                <p class="temp"><%= tmp %>&deg;C</p>
+                <p class="weather-description"><%= weather_description %></p>
+            </div>
+        </div>           
+    </section>
+    
+    <section class="extra-info">
+        <div class="feels-like">
+            <i class=" fa fa-xl fa-temperature-half"></i>
+            <p>Feels like</p>
+            <p class="text-bold"><%= feels_like %>&deg;C</p>
+        </div>
+        <div class="wind">
+            <i class="fa fa-xl fa-wind"></i>
+            <p>Wind</p>
+            <p class="text-bold"><%= wind_speed %> km/h</p>
+        </div>
+        <div class="humidity">
+            <i class="fa fa-droplet fa-xl fa-droplet-percent"></i>
+            <p>Humidity</p>
+            <p class="text-bold"><%= humidity_percent %> %</p>
+        </div>
+        <div class="cloudiness">
+            <i class="fa fa-cloud fa-xl"></i>
+            <p>Cloudiness</p>
+            <p class="text-bold"><%= cloudy %> %</p>
+        </div>
+        <div class="visibility">
+            <i class="fa fa-eye fa-xl"></i>
+            <p>Visibility</p>
+            <p class="text-bold"><%= visible %> km</p>
+        </div>
+        <div class="air-pressure">
+            <i class="fa fa-wind fa-xl fa-rotate-90"></i>
+            <p>Air pressure</p>
+            <p class="text-bold"><%= air_pressure %> hPa</p>
+        </div>
+    </section>
+    
+    <i class="timezone" style="display: none;"><%= time_zone %></i>
+</main>
+<%- include('partials/footer') %>
+    
